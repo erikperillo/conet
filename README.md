@@ -3,9 +3,11 @@
 ### Requirements
 - theano
 - numpy
+- PIL/pillow (optional)
 
 ### Files
 - conet/cnn.py: The base for building the model.
 - conet/sgd.py: The base for training the model.
 - conet/conet.py: Assembling the model and training.
+- conet/prediction.py: Play with your trained model.
 - data/cones_dataset.pkl: Augmented dataset of ~3800 images of cones/not cones.
