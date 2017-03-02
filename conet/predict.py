@@ -11,7 +11,7 @@ from theano import tensor
 import numpy as np
 import gzip
 import pickle
-import cv2
+from PIL import Image
 import sys
 
 
@@ -52,10 +52,12 @@ def main():
 
     print("loading image...")
     filepath = sys.argv[1]
-    img = cv2.imread(filepath, 0)
-    if img.shape != INP_IMG_SHAPE:
-        print("resizing image from {} to {}".format(img.shape, INP_IMG_SHAPE))
-        img = cv2.resize(img, INP_IMG_SHAPE[::-1])
+    img = Image.open(filepath).convert("L")
+    img_shape = img.height, img.width
+    if img_shape != INP_IMG_SHAPE:
+        print("resizing image from {} to {}".format(img_shape, INP_IMG_SHAPE))
+        img = img.resize(INP_IMG_SHAPE[::-1], Image.ANTIALIAS)
+    img = np.asarray(img)
 
     pred = predict(model, img)
     print("is it a cone? %s" % ("YES!" if pred else "NO"))
