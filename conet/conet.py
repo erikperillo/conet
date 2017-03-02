@@ -133,7 +133,7 @@ def train_net():
     sgd.sgd_with_validation(clf,
         X_tr_sh, y_tr_sh, X_cv_sh, y_cv_sh,
         learning_rate=0.001, reg_term=0.002,
-        batch_size=10, n_epochs=25,
+        batch_size=10, n_epochs=12,
         max_its=20000, improv_thresh=0.01, max_its_incr=4,
         x=x,
         rel_val_tol=None,
