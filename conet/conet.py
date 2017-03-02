@@ -17,11 +17,11 @@ Some amazing sources to learn more about the wonders of CNNs:
 #cnn implements all the network stuff.
 #sgd implements stochastic gradient descent, which is used to train the net.
 #both of them are built on top of theano.
-import cnn
-import sgd
+import trloop
 import theano
+import lasagne
 #other stuff we need
-from theano import tensor
+from theano import tensor as T
 import numpy as np
 import gzip
 import pickle
@@ -34,9 +34,9 @@ OUTPUT_MODEL_FILEPATH = "../data/conet_model.pkl"
 #train fraction
 TR_FRAC = 0.8
 #cross-validation fraction
-CV_FRAC = 0.18
+CV_FRAC = 0.1
 #input images from dataset should have this shape (height, width)
-inp_img_shape = (42, 28)
+INPUT_SHAPE = (42, 28)
 
 
 def load_dataset(filepath, use_gzip=False):
@@ -54,6 +54,44 @@ def tr_cv_te_split(X, y, tr_frac, cv_frac):
 
     return X[:tr], y[:tr], X[tr:tr+cv], y[tr:tr+cv], X[tr+cv:], y[tr+cv:]
 
+def build_cnn(input_shape, input_var=None):
+    network = lasagne.layers.InputLayer(shape=input_shape,
+                                        input_var=input_var)
+
+    #input shape in form n_batches, depth, rows, cols
+    network = lasagne.layers.InputLayer(shape=input_shape, input_var=input_var)
+
+    # Convolutional layer with 16 kernels of size 3x3. Strided and padded
+    # convolutions are supported as well; see the docstring.
+    network = lasagne.layers.Conv2DLayer(
+            network, num_filters=16, filter_size=(5, 5),
+            nonlinearity=lasagne.nonlinearities.rectify,
+            W=lasagne.init.GlorotUniform())
+
+    # Max-pooling layer of factor 2 in both dimensions:
+    network = lasagne.layers.MaxPool2DLayer(network, pool_size=(2, 2))
+
+    # Another convolution with 32 5x5 kernels, and another 2x2 pooling:
+    network = lasagne.layers.Conv2DLayer(
+            network, num_filters=32, filter_size=(5, 5),
+            nonlinearity=lasagne.nonlinearities.rectify)
+    network = lasagne.layers.MaxPool2DLayer(network, pool_size=(2, 2))
+
+    # A fully-connected layer of x units with 50% dropout on its inputs:
+    network = lasagne.layers.DenseLayer(
+            lasagne.layers.dropout(network, p=.5),
+            num_units=128,
+            nonlinearity=lasagne.nonlinearities.rectify)
+
+    # And, finally, the 10-unit output layer with 50% dropout on its inputs:
+    network = lasagne.layers.DenseLayer(
+            lasagne.layers.dropout(network, p=.5),
+            num_units=2,
+            nonlinearity=lasagne.nonlinearities.softmax)
+
+    return network
+
+
 def train_net():
     """
     Trains network on images dataset.
@@ -62,6 +100,7 @@ def train_net():
     #data loading
     print("loading data...")
     X, y = load_dataset(DATASET_FILEPATH)
+    X = X.reshape((X.shape[0], 1) + INPUT_SHAPE)
     print("\tX, y shapes:", X.shape, y.shape)
 
     #train, cv, test splits
@@ -72,84 +111,62 @@ def train_net():
     print("\ttest shape:", X_te.shape, y_te.shape)
 
     #symbolic variables
-    x = tensor.matrix(name="x")
-    y = tensor.ivector(name="y")
+    input_var = T.tensor4(name="inputs")
+    target_var = T.ivector(name="targets")
 
-    #convolutional neural network parameters.
-    #first layer. extracts basic low-level features
-    layer_0_params = (
-        #convolution
-        {
-            #assumes grayscale input images
-            "n_inp_maps": 1,
-            #input maps shape
-            "inp_maps_shape": inp_img_shape,
-            #number of feature maps that get out of this layer
-            "n_out_maps": 16,
-            "filter_shape": (3, 3),
-        },
-        #max-pooling
-        {
-            "shape": (2, 2)
-        }
-    )
-    #second layer. extracts higher-level features
-    layer_1_params = (
-        #convolution
-        {
-            "n_out_maps": 32,
-            "filter_shape": (5, 5),
-        },
-        #max-pooling
-        {
-            "shape": (2, 2)
-        }
-    )
-    #the final layer is a fully-connected neural network.
-    fully_connected_layer_params = {
-        #number of hidden units
-        "n_hidden": 196,
-        #1 class -> two outputs (true or false)
-        "n_out": 2
-    }
+    print("building network...")
+    #input_var = input_var.reshape((input_var.shape[0], 1) + INPUT_SHAPE)
+    network = build_cnn((None, 1) + INPUT_SHAPE, input_var)
 
-    #building neural network
-    inp = x.reshape((x.shape[0], 1,) + inp_img_shape)
-    clf = cnn.ConvolutionalNeuralNetwork(
-        inp=inp,
-        conv_pool_layers_params=[
-            layer_0_params,
-            layer_1_params,],
-        fully_connected_layer_params=fully_connected_layer_params)
+    prediction = lasagne.layers.get_output(network)
+    loss = lasagne.objectives.categorical_crossentropy(prediction, target_var)
+    loss = loss.mean()
+    reg = lasagne.regularization.regularize_network_params(network,
+        lasagne.regularization.l2)
+    loss += reg*0.0001
 
-    #building theano shared variables, this binds real data to symbolic vars
-    X_tr_sh = theano.shared(X_tr, borrow=True)
-    y_tr_sh = theano.shared(y_tr, borrow=True)
-    X_cv_sh = theano.shared(X_cv, borrow=True)
-    y_cv_sh = theano.shared(y_cv, borrow=True)
+    params = lasagne.layers.get_all_params(network, trainable=True)
+    updates = lasagne.updates.nesterov_momentum(
+            loss, params, learning_rate=0.01, momentum=0.9)
 
-    #stochastic gradient descent with validation check.
-    print("calling sgd_with_validation", flush=True)
-    sgd.sgd_with_validation(clf,
-        X_tr_sh, y_tr_sh, X_cv_sh, y_cv_sh,
-        learning_rate=0.001, reg_term=0.002,
-        batch_size=10, n_epochs=12,
-        max_its=20000, improv_thresh=0.01, max_its_incr=4,
-        x=x,
-        rel_val_tol=None,
-        val_freq="auto",
-        verbose=True)
+    test_prediction = lasagne.layers.get_output(network, deterministic=True)
+    test_loss = lasagne.objectives.categorical_crossentropy(test_prediction,
+        target_var)
+    test_loss = test_loss.mean()
+    #test_loss = test_loss + reg*0.001
+    # As a bonus, also create an expression for the classification accuracy:
+    test_acc = T.mean(T.eq(T.argmax(test_prediction, axis=1), target_var),
+        dtype=theano.config.floatX)
 
-    #building accuracy function
-    #acc = theano.function([inp, y], clf.score(y))
-    #acc_val = acc(np.reshape(X_te, (X_te.shape[0], 1,) + inp_img_shape), y_te)
-    #print("accuracy: %.2f%%" % (100*acc_val))
+    print("compiling functions...", flush=True)
+    # Compile a function performing a training step on a mini-batch (by giving
+    # the updates dictionary) and returning the corresponding training loss:
+    train_fn = theano.function([input_var, target_var], loss, updates=updates)
 
-    #saving model
+    # Compile a second function computing the validation loss and accuracy:
+    val_fn = theano.function([input_var, target_var], [test_loss, test_acc])
+
+    print("calling loop")
+    try:
+        trloop.train_loop(
+            X_tr, y_tr, train_fn,
+            n_epochs=16, batch_size=10,
+            X_val=X_cv, y_val=y_cv, val_f=val_fn,
+            val_acc_tol=None,
+            max_its=None,
+            verbose=2)
+    except KeyboardInterrupt:
+        print("Ctrl+C pressed.")
+        pass
+
+    print("end.")
+    err, acc = val_fn(X_te, y_te)
+    print("test loss: %f | test acc: %f" % (err, acc))
+
     if OUTPUT_MODEL_FILEPATH:
         print("saving model...")
         with open(OUTPUT_MODEL_FILEPATH, "wb") as f:
-            pickle.dump(clf, f)
+            pickle.dump(network, f)
 
 if __name__ == "__main__":
     train_net()

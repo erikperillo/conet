@@ -5,9 +5,10 @@ Test your model with this script. Just call it passing an image as argument.
 Example: ./predict.py path/to/maybe/cone.jpg
 """
 
-import cnn
 import theano
-from theano import tensor
+import lasagne
+from theano import tensor as T
+import time
 import numpy as np
 import gzip
 import pickle
@@ -33,11 +34,21 @@ def norm(img, u, sd):
         img = np.array(img, dtype=np.float64)
     return (img - u)/sd
 
-def predict(model, img):
-    pred = theano.function([model.inp], model.pred)
+def predict(network, img):
+    inp = T.tensor4("inp")
+    #inp = inp.reshape((1, 1) + img.shape)
+    pred = lasagne.layers.get_output(network, inputs=inp, deterministic=True)
+    pred = T.argmax(pred, axis=1)
+    pred_f = theano.function([inp], pred)
+
     img = norm(img, X_MEAN, X_STD)
-    x = img.reshape((1, 1) + img.shape)
-    return pred(x)[0] == 1
+    img = img.reshape((1, 1) + img.shape)
+
+    start_time = time.time()
+    ret = pred_f(img)[0] == 1
+    pred_time = time.time() - start_time
+
+    return ret, pred_time
 
 def main():
     """
@@ -59,8 +70,9 @@ def main():
         img = img.resize(INP_IMG_SHAPE[::-1], Image.ANTIALIAS)
     img = np.asarray(img)
 
-    pred = predict(model, img)
+    pred, pred_time = predict(model, img)
     print("is it a cone? %s" % ("YES!" if pred else "NO"))
+    print("(processing time: %.6fs)" % pred_time)
 
 if __name__ == "__main__":
     main()
