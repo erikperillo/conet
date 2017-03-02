@@ -150,7 +150,7 @@ def train_net():
     try:
         trloop.train_loop(
             X_tr, y_tr, train_fn,
-            n_epochs=16, batch_size=10,
+            n_epochs=20, batch_size=10,
             X_val=X_cv, y_val=y_cv, val_f=val_fn,
             val_acc_tol=None,
             max_its=None,
