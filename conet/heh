@@ -1,0 +1,774 @@
+loading model...
+making prediction function...
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_10.pgm'
+resizing image from (100, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.001042s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_185.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000887s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_136.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000870s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_43.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000878s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_142.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000864s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_35.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000917s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_34.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000865s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_85.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000865s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_20.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000863s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_122.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000883s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_32.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000907s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_74.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000881s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_124.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000943s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_179.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000872s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_73.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000878s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_128.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000862s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_89.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? NO
+(processing time: 0.000882s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_215.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000951s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_83.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000932s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_79.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000864s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_145.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? NO
+(processing time: 0.000863s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_37.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000863s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_183.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000861s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_6.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000863s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_191.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000862s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_59.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000865s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_95.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? NO
+(processing time: 0.000862s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_70.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000873s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_107.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000861s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_13.pgm'
+resizing image from (100, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000881s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_204.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000863s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_126.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? NO
+(processing time: 0.000912s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_82.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? NO
+(processing time: 0.000865s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_58.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000861s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_200.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000864s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_127.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? NO
+(processing time: 0.000861s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_202.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000872s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_193.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000860s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_148.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000919s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_105.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? NO
+(processing time: 0.000867s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_86.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000878s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_51.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000861s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_114.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000862s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_137.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000866s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_77.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000862s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_112.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000866s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_110c.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? NO
+(processing time: 0.000864s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_169.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000866s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_31.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.001526s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_3.pgm'
+resizing image from (100, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.001562s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_181.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.001022s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_71.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000865s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_167.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000875s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_42.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000863s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_30.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000882s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_132.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000865s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_46.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000926s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_39.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000864s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_177.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000879s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_104.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? NO
+(processing time: 0.000863s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_138.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000862s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_81.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000862s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_64.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? NO
+(processing time: 0.000863s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_63.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000865s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_108b.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000877s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_90.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? NO
+(processing time: 0.000936s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_106.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000884s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_151.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000885s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_108.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000864s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_196.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000936s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_47.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000897s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_194.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000930s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_8.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000897s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_120.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000928s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_76.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000885s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_158.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000933s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_94.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000880s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_48.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000884s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_133.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000864s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_141.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000862s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_62.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000865s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_61.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000868s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_208.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000862s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_87.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000870s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_11.pgm'
+resizing image from (100, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000880s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_150.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000865s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_28.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000878s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_38.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000904s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_155.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000891s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_205.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000866s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_25.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000865s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_57.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000864s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_88.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000861s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_66.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000885s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_52.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000866s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_188.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000882s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_23.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000871s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_40.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000881s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_33.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000866s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_211.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000875s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_209.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? NO
+(processing time: 0.000863s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_198.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000881s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_157.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000865s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_5.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000863s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_65.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000865s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_159.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000867s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_192.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000912s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_72.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000867s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_118.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000886s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_26.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000866s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_129.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000875s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_214.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000865s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_12.pgm'
+resizing image from (100, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000920s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_24.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000867s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_176.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000862s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_100.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000862s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_171.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000863s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_54.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000864s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_4.pgm'
+resizing image from (100, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000862s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_68.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000882s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_75.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000861s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_153.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? NO
+(processing time: 0.000881s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_116.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000863s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_111.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000874s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_117.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000861s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_187.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000903s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_56.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000865s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_175.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000860s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_107b.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000863s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_201.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000858s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_140.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000903s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_109.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000903s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_210.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000874s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_182.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000863s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_7.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000880s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_102.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000865s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_98.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000863s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_49.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000871s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_160.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000899s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_144.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000918s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_206.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000906s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_207.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000912s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_9.pgm'
+resizing image from (100, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000880s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_197.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000914s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_91.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000865s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_21.pgm'
+resizing image from (100, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000947s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_55.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000923s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_143.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000932s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_29.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000915s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_103.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000973s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_78.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? NO
+(processing time: 0.000918s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_69.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000872s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_174.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000865s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_115.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000878s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_41.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000864s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_44.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000882s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_186.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000869s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_139.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000875s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_107c.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000864s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_1.pgm'
+resizing image from (100, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000865s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_121.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000867s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_80.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? NO
+(processing time: 0.000867s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_110.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000907s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_101.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000901s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_53.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? NO
+(processing time: 0.000872s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_195.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000863s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_99.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000880s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_92.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000864s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_17.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000935s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_165.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000864s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_199.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000874s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_170.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000868s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_84.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000868s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_119.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000868s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_67.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000860s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_50.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000906s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_154.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000863s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_27.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000875s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_106b.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000860s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_189.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000870s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_113.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000861s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_110b.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? NO
+(processing time: 0.000876s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_152.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000863s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_161.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000860s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_212.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000859s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_18.pgm'
+resizing image from (100, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000859s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_135.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000860s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_36.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000860s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_19.pgm'
+resizing image from (100, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000927s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_45.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000863s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_60.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000873s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_213.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000861s)
+in '/home/erik/proj/baleia-ib/cones/cropped/all/cone_190.pgm'
+resizing image from (120, 80) to (42, 28)
+is it a cone? YES!
+(processing time: 0.000874s)

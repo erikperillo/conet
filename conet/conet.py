@@ -14,9 +14,9 @@ Some amazing sources to learn more about the wonders of CNNs:
 """
 
 #these are the three main modules.
-#cnn implements all the network stuff.
-#sgd implements stochastic gradient descent, which is used to train the net.
-#both of them are built on top of theano.
+#trloop implements gradient descent training loop.
+#theano is the basis for everything.
+#lasagne sits on top of theano and complements it.
 import trloop
 import theano
 import lasagne
@@ -32,9 +32,9 @@ DATASET_FILEPATH = "../data/cones_dataset.pkl"
 #output model
 OUTPUT_MODEL_FILEPATH = "../data/conet_model.pkl"
 #train fraction
-TR_FRAC = 0.8
+TR_FRAC = 0.9
 #cross-validation fraction
-CV_FRAC = 0.1
+CV_FRAC = 0.075
 #input images from dataset should have this shape (height, width)
 INPUT_SHAPE = (42, 28)
 
@@ -61,26 +61,31 @@ def build_cnn(input_shape, input_var=None):
     #input shape in form n_batches, depth, rows, cols
     network = lasagne.layers.InputLayer(shape=input_shape, input_var=input_var)
 
-    # Convolutional layer with 16 kernels of size 3x3. Strided and padded
+    # Convolutional layer with 20 kernels of size 3x3. Strided and padded
     # convolutions are supported as well; see the docstring.
     network = lasagne.layers.Conv2DLayer(
-            network, num_filters=16, filter_size=(5, 5),
+            network, num_filters=8, filter_size=(5, 5),
             nonlinearity=lasagne.nonlinearities.rectify,
             W=lasagne.init.GlorotUniform())
-
     # Max-pooling layer of factor 2 in both dimensions:
     network = lasagne.layers.MaxPool2DLayer(network, pool_size=(2, 2))
 
     # Another convolution with 32 5x5 kernels, and another 2x2 pooling:
     network = lasagne.layers.Conv2DLayer(
-            network, num_filters=32, filter_size=(5, 5),
+            network, num_filters=16, filter_size=(3, 3),
+            nonlinearity=lasagne.nonlinearities.rectify)
+    network = lasagne.layers.MaxPool2DLayer(network, pool_size=(2, 2))
+
+    # Another convolution with 32 5x5 kernels, and another 2x2 pooling:
+    network = lasagne.layers.Conv2DLayer(
+            network, num_filters=32, filter_size=(3, 3),
             nonlinearity=lasagne.nonlinearities.rectify)
     network = lasagne.layers.MaxPool2DLayer(network, pool_size=(2, 2))
 
     # A fully-connected layer of x units with 50% dropout on its inputs:
     network = lasagne.layers.DenseLayer(
             lasagne.layers.dropout(network, p=.5),
-            num_units=128,
+            num_units=96,
             nonlinearity=lasagne.nonlinearities.rectify)
 
     # And, finally, the 10-unit output layer with 50% dropout on its inputs:
@@ -121,9 +126,9 @@ def train_net():
     prediction = lasagne.layers.get_output(network)
     loss = lasagne.objectives.categorical_crossentropy(prediction, target_var)
     loss = loss.mean()
-    reg = lasagne.regularization.regularize_network_params(network,
-        lasagne.regularization.l2)
-    loss += reg*0.0001
+    #reg = lasagne.regularization.regularize_network_params(network,
+    #    lasagne.regularization.l2)
+    #loss += reg*0.0001
 
     params = lasagne.layers.get_all_params(network, trainable=True)
     updates = lasagne.updates.nesterov_momentum(
@@ -150,7 +155,7 @@ def train_net():
     try:
         trloop.train_loop(
             X_tr, y_tr, train_fn,
-            n_epochs=20, batch_size=10,
+            n_epochs=10, batch_size=10,
             X_val=X_cv, y_val=y_cv, val_f=val_fn,
             val_acc_tol=None,
             max_its=None,
