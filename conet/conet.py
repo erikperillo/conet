@@ -101,7 +101,6 @@ def train_net():
     """
     Trains network on images dataset.
     """
-
     #data loading
     print("loading data...")
     X, y = load_dataset(DATASET_FILEPATH)
@@ -155,7 +154,7 @@ def train_net():
     try:
         trloop.train_loop(
             X_tr, y_tr, train_fn,
-            n_epochs=10, batch_size=10,
+            n_epochs=16, batch_size=10,
             X_val=X_cv, y_val=y_cv, val_f=val_fn,
             val_acc_tol=None,
             max_its=None,
