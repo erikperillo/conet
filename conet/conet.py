@@ -61,34 +61,34 @@ def build_cnn(input_shape, input_var=None):
     #input shape in form n_batches, depth, rows, cols
     network = lasagne.layers.InputLayer(shape=input_shape, input_var=input_var)
 
-    # Convolutional layer with 20 kernels of size 3x3. Strided and padded
+    # Convolutional layer with 8 kernels of size 3x3. Strided and padded
     # convolutions are supported as well; see the docstring.
     network = lasagne.layers.Conv2DLayer(
-            network, num_filters=8, filter_size=(5, 5),
+            network, num_filters=8, filter_size=(3, 3),
             nonlinearity=lasagne.nonlinearities.rectify,
             W=lasagne.init.GlorotUniform())
     # Max-pooling layer of factor 2 in both dimensions:
     network = lasagne.layers.MaxPool2DLayer(network, pool_size=(2, 2))
 
-    # Another convolution with 32 5x5 kernels, and another 2x2 pooling:
+    # Another convolution with 12 5x5 kernels, and another 2x2 pooling:
     network = lasagne.layers.Conv2DLayer(
-            network, num_filters=16, filter_size=(3, 3),
+            network, num_filters=12, filter_size=(5, 5),
             nonlinearity=lasagne.nonlinearities.rectify)
     network = lasagne.layers.MaxPool2DLayer(network, pool_size=(2, 2))
 
-    # Another convolution with 32 5x5 kernels, and another 2x2 pooling:
+    # Another convolution with 24 3x3 kernels, and another 2x2 pooling:
     network = lasagne.layers.Conv2DLayer(
-            network, num_filters=32, filter_size=(3, 3),
+            network, num_filters=24, filter_size=(3, 3),
             nonlinearity=lasagne.nonlinearities.rectify)
     network = lasagne.layers.MaxPool2DLayer(network, pool_size=(2, 2))
 
-    # A fully-connected layer of x units with 50% dropout on its inputs:
+    # A fully-connected layer of 96 units with 50% dropout on its inputs:
     network = lasagne.layers.DenseLayer(
             lasagne.layers.dropout(network, p=.5),
             num_units=96,
             nonlinearity=lasagne.nonlinearities.rectify)
 
-    # And, finally, the 10-unit output layer with 50% dropout on its inputs:
+    # And, finally, the 2-unit output layer with 50% dropout on its inputs:
     network = lasagne.layers.DenseLayer(
             lasagne.layers.dropout(network, p=.5),
             num_units=2,
@@ -154,7 +154,7 @@ def train_net():
     try:
         trloop.train_loop(
             X_tr, y_tr, train_fn,
-            n_epochs=16, batch_size=10,
+            n_epochs=8, batch_size=10,
             X_val=X_cv, y_val=y_cv, val_f=val_fn,
             val_acc_tol=None,
             max_its=None,

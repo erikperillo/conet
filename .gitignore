@@ -1,3 +1,4 @@
 __pycache__/
 data/
 !data/cones_dataset.pkl
+!data/conet_best_model_so_far.pkl
